@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.header {
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: blue;
+}
+
+.input-search {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.input-search label {
+  font-size: 1.3rem;
+}
+
+.input-search input {
+  font-size: 1.3rem;
+  height: 4rem;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.input-search input:focus {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.input-search input::placeholder {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.posts {
+  background-color: aqua;
+  width: 100%;
+  min-height: 45vh;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.posts .img-main {
+  width: 40%;
+  height: 45vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-main {
+  width: 100%;
+  height: 45vh;
+  border-radius: 20px;
+}
+
+.posts .details {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  gap: 1rem;
+  padding: 5px 0;
+}
+
+#img-small {
+  margin-top: 10px;
+  width: 20%;
+  height: 20%;
+}
+
+.details .img-small {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.img-small #img {
+  width: 20%;
+  height: 18vh;
+  border-radius: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.tags h4 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#link-icons {
+  font-size: 1.2rem;
+  color: blue;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid blue;
+  padding: 0.2rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.link-message {
+  position: sticky;
+  top: 10%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid blue;
+  color: blue;
+  background: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
